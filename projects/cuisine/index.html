@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  	<meta charset="utf-8">
+  	<meta name="description" content="Your description goes here">
+  	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Cuisine Restaurant</title>
+
+		<!-- external CSS link -->
+		
+		<link rel="stylesheet" href="css/style.css">
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+        <!-- Google Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+        rel="stylesheet">
+        <!-- Font Awesome Icon Library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- add icon to title -->
+        <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/twitter/322/kitchen-knife_1f52a.png" type="image/x-icon">
+        <!-- Add link preview when sharing-->
+        <meta property="og:title" content="Cuisine Restaurant" />
+        <meta name="twitter:title" content="Cuisine Restaurant" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:creator" content="@jessamillz" />
+        <meta name="twitter:site" content="@jessamillz" />
+        <meta property="og:url" content="https://www.jessicamiller.dev/projects/cuisine/" />
+        <meta property="og:site_name" content="jessicamiller.dev" />
+        <meta name="description" content="Website layout inspired by food">
+        <meta property="og:description" content="Website layout inspired by food" />
+        <meta name="twitter:description" content="Website layout inspired by food" />
+        <meta property="og:image" content="images/cuisinescreenshot.png" />
+        <meta name="twitter:image" content="https://www.jessicamiller.dev/projects/cuisine/images/cuisinescreenshot.png" />
+
+	</head>
+	<body>
+        <div id="top-section">
+            <header>
+                <span class="logo">Cuisine</span>
+                <nav id="ham-nav">
+                    <label for="hamburger">&#9776;</label>
+                    <input type="checkbox" id="hamburger"/>
+                    <ul id="nav-list">
+                        <li class="nav-item"><a href="#">Home</a></li>
+                        <li class="nav-item"><a href="#">About Us</a></li>
+                        <li class="nav-item"><a href="#">Menu</a></li>
+                        <li class="nav-item"><a href="#">Order Now</a></li>
+                        <li class="nav-item"><a href="#">Blog</a></li>
+                        <li class="nav-item"><a href="#">Location</a></li>
+                    </ul>
+                </nav>
+                <div id="top-shop-search-icons">
+                    <span class="material-icons-outlined orange-600"><a href="#">shopping_cart</a></span>
+                    <span class="material-icons-outlined orange-600"><a href="#">search</a></span>
+                </div>
+            </header>
+            <main>
+                <h1>Welcome To Our Cuisine Restaurant</h1>
+                <form id="main-form">
+                    <input type="search" placeholder="Enter location here" class="form-text">
+                        <input type="button" value="Search" onclick="window.open('https://google.com');" class="form-btn btn">
+                </form>
+                <div class="socials">
+                    <span class="social"><a href="#>"><i class="fa fa-facebook"></i>252k</a></span>
+                    <span><a href="#"><i class="fa fa-twitter"></i>62k</a></span>
+                    <span><a href="#"><i class="fa fa-instagram"></i>55k</a></span>
+                </div>
+            </main>
+        </div>
+        <section class="about-us">
+            <span class="orange-600">About Us</span>
+            <h2>Discover Our Restaurant Story</h2>
+            <p>Cuisine is a family-owned restaurant since 1999. Back in 1999, we decided to quit our day jobs and put all of our money and time into opening this food establishment. Since Y2K was right around the corner, we wanted to make sure that we lived our lives with no regrets just in case the world came to it's end. Our italian upbringing provided us with love and precision when it comes to cooking and we wanted to share that with the local community.</p>
+            <p>We look forward to providing you with nutritious and delicious meals. From our family, to yours.</p>
+            <a href="#"><button type="button" class="btn discover">Discover Menu<span class="material-icons-outlined">east</span></button></a>
+        </section>
+        <section class="menu">
+            <span class="orange-600"><a href="#">Order Online Now</a></span>
+            <h2>Our Specialty Cuisine</h2>
+            <ul id="menu-sections">
+                <li class="meal"><a href="#">Breakfast</a></li>
+                <li class="meal"><a href="#">Lunch</a></li>
+                <li class="meal"><a href="#">Dinner</a></li>
+                <li class="meal"><a href="#">Dessert</a></li>
+                <li class="meal"><a href="#">Shake</a></li>
+            </ul>
+            <div class="menu-items">
+                <div class="item" id="item-one">
+                    <div class="item-info">
+                        <span>$14.99</span>
+                        <div class="orange-600"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                        <span>Appetizer</span>
+                        <button type="button" class="btn">Order Now</button>
+                    </div>
+                </div>
+                <div class="item" id="item-two">
+                    <div class="item-info">
+                        <span>$18.99</span>
+                        <div class="orange-600"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i></div>
+                        <span>Entree</span>
+                        <button type="button" class="btn">Order Now</button>
+                    </div>
+                </div>
+                <div class="item" id="item-three">
+                    <div class="item-info">
+                        <span>$17.99</span>
+                        <div class="orange-600"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                        <span>Appetizer</span>
+                        <button type="button" class="btn">Order Now</button>
+                    </div>
+                </div>
+                <div class="item" id="item-four">
+                    <div class="item-info">
+                        <span>$21.99</span>
+                        <div class="orange-600"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i></div>
+                        <span>Dessert</span>
+                        <button type="button" class="btn">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="orange-lt dots">
+                <i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i>
+            </div>
+        </section>
+        <section class="book">
+            <div id="book-content">
+                <span class="orange-600">Book Table</span>
+                <h2>Opening Hours</h2>
+                <i class="fa fa-phone orange-600 fa-2x"></i>
+                <span>Call Now</span>
+                <span class="orange-600 md-24">+12345 678 910</span>
+                <div id="hours">
+                    <div id="hours-m-t">
+                        <h5>Monday to Tuesday</h5>
+                        <span><strong>9:00 am - 10:00 pm</strong></span>
+                    </div>
+                    <div id="hours-f-s">
+                        <h5>Friday to Sunday</h5>
+                        <span><strong>11:00 am - 8:00 pm</strong></span>
+                    </div>
+                </div>
+                <img src="https://i.ibb.co/3cFpnRK/s-o-c-i-a-l-c-u-t-oxpc-Uf-H0-bg-unsplash.jpg">
+            </div>  
+        </section>
+        <section class="reviews">
+            <span class="orange-600">Testimonials</span>
+            <h2>Customers Say</h2>
+            <div id="review-one">
+                <img src="https://i.ibb.co/2ZXDwMz/ben-collins-Ci-15-Whn-IA-unsplash.jpg" alt="ben-collins-Ci-15-Whn-IA-unsplash">
+                <h3 class="name">Mr. John Smith</h3>
+                <span>Guano Expert</span>
+                <div class="orange-600 "><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                <p>The food was amazing! I would hire the chef for my personal kitchen if my profession paid more, but I'll never give up expoloring new caves in search of bat droppings. I'd have to be bat-s**t crazy to give up a career I love! Oh, and the meal was superb! </p>
+            </div>
+            <div class="orange-lt dots">
+                <i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i>
+            </div>
+        </section>
+        <footer>
+            <p>Made by Jessica Miller</p>
+            <a href="https://www.jessicamiller.dev/" target="_blank">jessicamiller.dev</a>
+        </footer>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

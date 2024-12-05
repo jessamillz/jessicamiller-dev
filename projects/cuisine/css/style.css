@@ -1,0 +1,413 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+    margin: auto;
+    font-size: 1rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+#top-section {
+    background-image: url("https://i.ibb.co/hC7hQn9/brooke-lark-08b-OYn-H-r-E-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px 20px 10px 20px;
+    min-height: 60vh;
+}
+header {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav {
+    width: 75%;
+}
+#nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav-item {
+
+}
+#top-shop-search-icons {
+    width: 85px;
+    display: flex;
+}
+#top-shop-search-icons * {
+    padding-left: 5px;
+}
+/* hamburger menu */
+#hamburger, #ham-nav label {
+    display: none;    
+}
+ /* end hamburger menu  */
+main {
+    width: 50%;
+    padding-top: 7%;
+}
+#main-form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.form-text {
+   width: 70%;
+   height: 30px;
+}
+
+.socials {
+    padding-top: 15px;
+    width: 175px;
+    display: inline-flex;
+    justify-content: flex-start;
+    color: rgb(48, 48, 48);
+}
+.socials * {
+    padding: 5px 3px 5px 3px;
+}
+.about-us {
+    background-image: url("https://i.ibb.co/FWtpw4h/jakub-kapusnak-s-Dbj1d-Fl-FPU-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center; 
+    padding: 5% 20% 5% 40%;
+    min-height: 60vh;   
+}
+.menu {
+    background-color: #f3f7f8;
+    padding: 5% 0;
+    min-height: 60vh;
+    text-align: center;
+}
+#menu-sections {
+    padding: 0 10%;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+}
+#menu-sections * {
+    width: 100%;
+}
+.meal {
+    border-bottom: 1px solid gray;
+}
+.meal:hover {
+    color: orange;
+    border-bottom: 2px solid orange;
+}
+.menu-items {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.item {
+    width: 200px;
+    height: 250px;
+}
+#item-one {
+    background-image: url("https://i.ibb.co/m83LjdR/micheile-dot-com-l-XCVCRk-IJ14-unsplash.jpg");
+}
+#item-two {
+    background-image: url("https://i.ibb.co/WgLZ6KV/mariana-medvedeva-i-Nw-CO9yc-Blc-unsplash.jpg");
+}
+#item-three {
+    background-image: url("https://i.ibb.co/6DWVRdb/victoria-shes-UC0-HZd-Uit-WY-unsplash.jpg");
+}
+#item-four {
+    background-image: url("https://i.ibb.co/KzFHzxd/amy-vann-X0-DC3-E-jrn0-unsplash.jpg");
+}
+.item-info {
+    display: none;
+}
+.item:hover .item-info button {
+    margin-top: 3px;
+}
+.item:hover .item-info {
+    width: inherit;
+    height: inherit;
+    background-color: rgba(0, 0, 0, 0.411);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.book {   
+    background-image: url("https://i.ibb.co/QJ1PNk9/razvan-horhat-e63-UPo-Yr-PTk-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 5% 10%;  
+}
+#book-content {
+    background-color: rgba(255, 255, 255, 0.733);
+    padding: 5%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+}
+#hours {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#hours *{
+    width: 160px;
+}
+#hours h5 {
+    width: 100%;
+}
+#hours-m-t {
+    text-align: left;
+}
+#hours-f-s {
+    text-align: right;
+}
+.book img {
+    max-width: 100%;
+    height: auto; 
+    margin-top: 20px;   
+}
+.reviews {
+    text-align: center;
+    padding: 5% 10%;
+}
+#review-one img {
+    border-radius: 90px;
+    width: 75px;
+    height: 75px;
+}
+footer {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 16px;
+}
+footer > p {
+    margin-bottom: 5px;
+}
+footer > a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 20px;
+    padding: 3px 12px 5px 12px;
+    border-radius: 10px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+/* REMOVE STYLE FROM LIST ITEMS */
+ul {
+    list-style: none;
+}
+
+/* REMOVE STYLE FROM LINKS */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    color: #FB8C00;
+}
+.block {
+    display: block;
+}
+.logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
+    color: #FB8C00;
+    text-shadow: 2px 2px 3px;
+    rotate: -5deg;
+}
+.btn {
+    background-color: orange;
+    border: 1px solid orange;
+    border-radius: 5px;
+    padding: 3px;
+    display: inline;
+    text-align: center;
+}
+.btn:hover {
+    background-color: #f3f7f8;
+    color: #FB8C00;
+}
+.form-btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 30px;
+    width: 30%;
+}
+.discover {
+    display: flex;
+    align-items: center;
+}
+.name {
+    margin: 0;
+}
+
+/******************************************
+/* ICONS
+/*******************************************/
+.fa-circle {
+    padding: 0 5px;
+}
+.fa-circle:hover {
+    color: #FB8C00;
+    font-size: 2em;
+}
+.dots {
+    padding-top: 10px;
+    height: 30px;
+    font-size: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Rules for sizing the icon. */
+.md-8 { font-size: 8px; }
+.md-12 { font-size: 12px; }
+.md-16 { font-size: 16px; }
+.md-18 { font-size: 18px; }
+.md-24 { font-size: 24px; }
+.md-36 { font-size: 36px; }
+.md-48 { font-size: 48px; }
+.md-96 { font-size: 96px; }
+
+
+/* Rules for using icons as black on a light background. */
+.md-dark { color: rgba(0, 0, 0, 0.54); }
+.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.md-light { color: rgba(255, 255, 255, 1); }
+.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+/* Rules for custom colors */
+.orange-600 { color: #FB8C00; }
+.orange-lt { color: #ffbe6e}
+
+/* FA sizing */
+/* Literal Sizing Class	Font Size
+    fa-1x	                1em
+    fa-2x	                2em
+    fa-3x	                3em
+    fa-4x	                4em
+    fa-5x	                5em
+    fa-6x	                6em
+    fa-7x	                7em
+    fa-8x	                8em
+    fa-9x	                9em
+    fa-10x	                10em */
+
+/******************************************
+/* RESPONSIVENESS
+/*******************************************/
+
+@media all and (min-width:1201px) {
+    main {
+        margin-left: 10%;
+    }
+}
+
+@media all and (max-width:768px) {
+     /* (A) BREAK INTO VERTICAL MENU */
+     #nav-list {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        margin-left: -22px;
+      }
+     
+      /* (B) SHOW HAMBURGER ICON */
+      #ham-nav label { 
+        display: inline-block; 
+        color: black;
+        background: transparent;
+        font-style: normal;
+        font-size: 1.2em;
+      }
+      #ham-nav {
+        text-align: center;
+      }
+    
+    header {
+        height: fit-content;
+        align-items: flex-start;
+    }
+      /* (C) TOGGLE SHOW/HIDE MENU */
+      #nav-list { display: none; }
+      #ham-nav input:checked ~ #nav-list { 
+        display: block; 
+    }
+    main {
+        width: 72%;
+    }
+}
+
+@media all and (max-width:480px) {
+    body {
+        text-align: center;
+    }
+    main {
+        width: 100%;
+    }
+    .form-text {
+        width: 100%;
+    }
+    .about-us {
+        padding: 10px 20px 60px 20px;
+    }
+    .about-us p {
+        text-align: justify;
+    }
+    .discover {
+        margin: 40px auto;
+    }
+    #menu-sections {
+        padding: 0 20px;
+        justify-content: space-between;
+    }
+    #hours {
+        flex-direction: column;
+    }
+    #hours *{
+        width: 100%;
+        text-align: center;
+    }
+    .form-btn {
+        width: 100%;
+        margin: 0;
+        border-radius: 5px;
+    }
+}
